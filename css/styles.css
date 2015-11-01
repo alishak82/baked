@@ -1,3 +1,6 @@
+/*---------------------------------------*/
+/*MAIN*/
+/*---------------------------------------*/
 body {
 	margin: 0;
 	padding: 0;
@@ -7,6 +10,14 @@ body {
 	max-width: 1140px;
 	margin: 0 auto;
 }
+
+section {
+	height: 550px;
+}
+
+/*---------------------------------------*/
+/*HEADER*/
+/*---------------------------------------*/
 
 .hero	{
 	background-image: url(../images/hero_img.jpg);
@@ -74,3 +85,56 @@ body {
 	color: #a27452;
 	opacity: 0.7;
 }
+
+.testimonial	{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../images/eclectic-kitchen.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 400px;
+	color: #fff;
+}
+
+.testimonial p {
+	text-align: center;
+	padding-top: 140px;
+}
+
+
+.photo-showcase {
+	list-style: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.photo-showcase li {
+	display: block;
+	float: left;
+	width: 20%;
+	height: 165px;
+}
+
+.dessert-photo {
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	background-color: #000;
+}
+
+.dessert-photo img {
+	width: 100%;
+	height: auto;
+	opacity: 0.7;
+	transform: scale(1.15);
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.dessert-photo img:hover {
+	opacity: 1;
+	transform: scale(1.03);
+}
+
+
+
+
