@@ -4,6 +4,12 @@
 body {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
 }
 
 .container {
@@ -11,8 +17,12 @@ body {
 	margin: 0 auto;
 }
 
-section {
+/*section {
 	height: 550px;
+}*/
+
+section {
+	padding: 40px 0;
 }
 
 /*---------------------------------------*/
@@ -40,8 +50,7 @@ section {
 	text-decoration: none;
 	margin-left: 25px;
 	color: #fff;
-	font-size: 20px;
-	font-family: Arial, sans-serif;
+	font-weight: 400;
 }
 
 .nav li a:hover {
@@ -57,7 +66,7 @@ section {
 
 .tagline {
 	font-family: Times, Georgia, serif;
-	font-size: 30px;
+	font-size: 180%;
 	font-weight: bold;
 	font-style: oblique;
 	/*opacity: 0.8;*/
@@ -86,20 +95,125 @@ section {
 	opacity: 0.7;
 }
 
+/*---------------------------------------*/
+/*ICON SECTION*/
+/*---------------------------------------*/
+.icons {
+	color: #555;
+	display: block;
+	margin-bottom: 10px;
+	height: 500px;
+/*	padding: 40px 0;
+	height: 450px;*/
+}
+
+.icons h2 {
+	text-align: center;
+	/*padding: 2%;*/
+}
+
+.icons img {
+	height: 65px;
+	margin-top: 30px;
+}
+
+.p-icons {
+	width: 80%;
+	margin-left: 10%;
+	margin-bottom: 25px;
+}
+
+.icons p {
+	font-size: 80%;
+	/*padding: 1%;*/
+}
+
+/*---------------------------------------*/
+/*TESTIMONIAL*/
+/*---------------------------------------*/
+
 .testimonial	{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../images/eclectic-kitchen.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 400px;
+	background-attachment: fixed;
+	height: 350px;
 	color: #fff;
+	padding-bottom: 50px;
 }
 
-.testimonial p {
+.testimonial h2 {
 	text-align: center;
-	padding-top: 140px;
+	font-weight: lighter;
 }
 
+blockquote {
+	padding: 2%;
+	font-style: italic;
+	line-height: 125%;
+	position: relative;
+	font-size: 90%;
+}
+
+blockquote:before {
+	content: "\201C";
+	font-size: 350%;
+	display: block;
+	position: absolute;
+	top: -5px;
+	left: -10px;
+}
+
+cite {
+	font-size: 85%;
+	/*margin-top: 20px;*/
+	display: block;
+}
+
+cite img {
+	height: 60px;
+	border-radius: 50%;
+	margin: 30px 20px;
+	vertical-align: middle;
+}
+/*---------------------------------------*/
+/*FORM-MAP*/
+/*---------------------------------------*/
+
+.form-map {
+	height: 550px;
+}
+
+.form-map h2 {
+	text-align: center;
+	padding: 15px 0;
+}
+
+.form {
+	float: left;
+}
+
+.contact-form {
+	width: 550px;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+	width: 100%;
+	padding: 5px;
+	border-radius: 2px;
+}
+
+.map {
+	float: right;
+}
+
+/*---------------------------------------*/
+/*PHOTO GRID*/
+/*---------------------------------------*/
 
 .photo-showcase {
 	list-style: none;
