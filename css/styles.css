@@ -112,6 +112,11 @@ section {
 	/*padding: 2%;*/
 }
 
+.icons h3 {
+	text-transform: uppercase;
+	font-size: 90%;
+}
+
 .icons img {
 	height: 65px;
 	margin-top: 30px;
@@ -162,7 +167,7 @@ blockquote:before {
 	display: block;
 	position: absolute;
 	top: -5px;
-	left: -10px;
+	left: -15px;
 }
 
 cite {
@@ -185,9 +190,10 @@ cite img {
 	height: 550px;
 }
 
-.form-map h2 {
+.form-map h2,
+.form-map h3 {
 	text-align: center;
-	padding: 15px 0;
+	/*padding: 15px 0;*/
 }
 
 .form {
@@ -249,6 +255,53 @@ textarea {
 	transform: scale(1.03);
 }
 
+/*---------------------------------------*/
+/*FOOTER*/
+/*---------------------------------------*/
 
+footer {
+	background-color: #e0e0e0;
+	padding-bottom: 15px;
+}
 
+.footer-nav {
+	float: left;
+	list-style: none;
+}
 
+.footer-nav li {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.footer-nav a {
+	text-decoration: none;
+	color: #000;
+}
+
+.footer-nav a:hover {
+	/*color: #ccc;*/
+	color: #7e807e;
+}
+
+.social-icons {
+	float: right;
+	list-style: none;
+}
+
+.social-icons li {
+	display: inline-block;
+	padding-left: 20px;
+
+}
+
+.social-icons img {
+	height: 35px;
+}
+
+.copyright {
+	clear: both;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
